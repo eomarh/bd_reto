@@ -1,4 +1,4 @@
-<root>
+<productos>
     <item>
         <id_oc>1</id_oc>
         <proveedor>Omar</proveedor>
@@ -17,4 +17,4 @@
         <fechaentrega>2020-09-25</fechaentrega>
         <precio>15.00</precio>
     </item>
-</root>
+</productos>
