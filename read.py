@@ -35,8 +35,15 @@ else:
             'precio': float(item["precio"])
         }
         #Ejecucion de QUERIES
-        query = ("INSERT INTO oc_2(id_oc, proveedor, producto, descproducto, cantidad, fechaentrega, precio) VALUES(%(id_oc)s, %(proveedor)s, %(producto)s, %(descproducto)s, %(cantidad)s, %(fechaentrega)s, %(precio)s)")
-        exe.execute(query, data)
+        try:
+            query = ("INSERT INTO oc_2(id_oc, proveedor, producto, descproducto, cantidad, fechaentrega, precio) VALUES(%(id_oc)s, %(proveedor)s, %(producto)s, %(descproducto)s, %(cantidad)s, %(fechaentrega)s, %(precio)s)")
+            exe.execute(query, data)
+        except mysql.connector.IntegrityError:
+            print("Error: Valor duplicado en PrimaryKey.")
+        except mysql.connector.DataError:
+            print("Error en los datos introducidos")
+        except mysql.connector.ProgrammingError:
+            print("Error de sintaxis.")
         cnx.commit()
 
     cnx.close()
