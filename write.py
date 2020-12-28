@@ -32,4 +32,4 @@ else:
     print(xml)
     tree = ET.ElementTree(ET.fromstring(xml))
 
-    tree.write(ruta+'/output.xml', xml_declaration=True)
+    tree.write("output.xml", xml_declaration=True)
