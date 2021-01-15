@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xml>
+    <item>
+        <id_ocM>1</id_ocM>
+        <proveedorM>Omar</proveedorM>
+        <productoM>Frituras</productoM>
+        <descproductoM>doritos nacho</descproductoM>
+        <cantidadM>1</cantidadM>
+        <fechaentregaM>2020-09-24</fechaentregaM>
+        <precioM>12.00</precioM>
+    </item>
+    <item>
+        <id_ocM>2</id_ocM>
+        <proveedorM>Puga</proveedorM>
+        <productoM>Refresco</productoM>
+        <descproductoM>Coca-Cola</descproductoM>
+        <cantidadM>15</cantidadM>
+        <fechaentregaM>2020-09-25</fechaentregaM>
+        <precioM>15.00</precioM>
+    </item>
+</xml>
